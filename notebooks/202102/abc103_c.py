@@ -8,8 +8,7 @@ import math
 N = int(input())
 a = list(map(int, input().split()))
 m = math.prod(a) - 1
-fi = lambda ai: m % ai
-print(sum(map(fi, a)))
+print(sum(map(lambda ai: m % ai, a)))
 
 # %%
 N = int(input())
